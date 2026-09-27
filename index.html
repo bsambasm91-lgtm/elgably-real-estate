@@ -14,17 +14,15 @@
     body {
       margin: 0;
       font-family: Arial, Tahoma, sans-serif;
-      background: #111;
+      background: #0d0d0d;
       color: #fff;
-      text-align: center;
     }
 
-    .hero {
-      min-height: 100vh;
-      padding: 45px 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    .header {
+      text-align: center;
+      padding: 35px 15px 25px;
+      background: #111;
+      border-bottom: 1px solid #c9a227;
     }
 
     .logo {
@@ -32,71 +30,125 @@
       max-width: 80%;
       height: auto;
       display: block;
-      margin: 0 auto 25px;
+      margin: 0 auto 20px;
     }
 
     .company-name {
       margin: 0;
-      font-size: 30px;
       color: #d4af37;
+      font-size: 29px;
       font-weight: bold;
     }
 
-    .line {
-      width: 100px;
-      height: 2px;
-      background: #d4af37;
-      margin: 18px auto 30px;
+    .slogan {
+      margin-top: 10px;
+      color: #ddd;
+      font-size: 15px;
     }
 
-    .properties-title {
-      font-size: 26px;
-      margin: 0 0 25px;
-      color: #fff;
+    .title {
+      text-align: center;
+      margin: 30px 15px 20px;
+      color: #d4af37;
+      font-size: 27px;
     }
 
     .properties {
-      width: 100%;
-      max-width: 850px;
+      width: 94%;
+      max-width: 1000px;
+      margin: auto;
     }
 
     .property {
-      background: #1c1c1c;
-      border: 1px solid #d4af37;
+      background: #181818;
+      border: 1px solid #c9a227;
       border-radius: 14px;
       padding: 22px;
-      margin-bottom: 18px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,.35);
     }
 
-    .property h3 {
-      color: #d4af37;
+    .property h2 {
       margin-top: 0;
+      color: #d4af37;
+      font-size: 22px;
     }
 
     .property p {
-      margin-bottom: 0;
-      color: #ddd;
+      line-height: 1.9;
+      color: #eee;
+      margin: 8px 0;
     }
 
-    .contact {
-      margin-top: 20px;
-      padding: 22px;
-      width: 100%;
-      max-width: 850px;
-      border-top: 1px solid #d4af37;
+    .code {
+      display: inline-block;
+      background: #d4af37;
+      color: #111;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
     }
 
-    .contact-title {
+    .price {
+      color: #d4af37 !important;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 10px;
+      margin-top: 18px;
+      flex-wrap: wrap;
+    }
+
+    .buttons a {
+      flex: 1;
+      min-width: 140px;
+      text-align: center;
+      text-decoration: none;
+      padding: 13px 10px;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .call {
+      background: #d4af37;
+      color: #111;
+    }
+
+    .whatsapp {
+      background: #25D366;
+      color: #fff;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 35px 15px;
+      margin-top: 30px;
+      border-top: 1px solid #c9a227;
+      background: #111;
+    }
+
+    .footer h2 {
       color: #d4af37;
-      font-size: 22px;
-      margin-bottom: 12px;
     }
 
     .phone {
-      font-size: 25px;
-      font-weight: bold;
       direction: ltr;
-      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+      margin: 12px 0;
+    }
+
+    .footer a {
+      display: inline-block;
+      margin: 6px;
+      padding: 12px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
     }
 
     @media (max-width: 600px) {
@@ -104,12 +156,12 @@
         font-size: 24px;
       }
 
-      .properties-title {
+      .title {
         font-size: 23px;
       }
 
-      .logo {
-        width: 180px;
+      .property h2 {
+        font-size: 19px;
       }
     }
   </style>
@@ -117,55 +169,329 @@
 
 <body>
 
-  <main class="hero">
+<header class="header">
 
-    <!-- اللوجو -->
-    <img
-      src="logo-1.png"
-      alt="لوجو شركة الجبلي للتسويق العقاري"
-      class="logo"
-    >
+  <img src="logo-1.png"
+       alt="شركة الجبلي للتسويق العقاري"
+       class="logo">
 
-    <!-- اسم الشركة -->
-    <h1 class="company-name">
-      شركة الجبلي للتسويق العقاري
-    </h1>
+  <h1 class="company-name">
+    شركة الجبلي للتسويق العقاري
+  </h1>
 
-    <div class="line"></div>
+  <div class="slogan">
+    لسنا الوحيدون ولكننا متميزون
+  </div>
 
-    <!-- العقارات المتاحة -->
-    <h2 class="properties-title">
-      العقارات المتاحة
-    </h2>
+</header>
 
-    <section class="properties">
+<h2 class="title">العقارات المتاحة</h2>
 
-      <div class="property">
-        <h3>🏠 عقارات للبيع</h3>
-        <p>شقق • محلات • أراضي • عقارات استثمارية</p>
-      </div>
+<main class="properties">
 
-      <div class="property">
-        <h3>🏢 عقارات للإيجار</h3>
-        <p>شقق • محلات • وحدات إدارية وتجارية</p>
-      </div>
+  <!-- 7345 -->
+  <article class="property">
+    <span class="code">كود 7345</span>
+    <h2>شقة للبيع – شارع الهرم الرئيسي / القصر</h2>
+    <p>
+      كمباوند عمارات البنك المركزي – 142م² – الدور الثاني.
+      واجهة بحرية – 3 غرف – 2 حمام – ريسبشن كبير – مطبخ واسع.
+      تشطيب سوبر لوكس – 2 تكييف – حصة في الجراج – أسانسير.
+    </p>
+    <p>الملكية مسجلة لدى جمعية الإسكان للبنك المركزي.</p>
+    <p class="price">السعر: 4,300,000 جنيه قابل للتفاوض</p>
+    <div class="buttons">
+      <a class="call" href="tel:01153705060">اتصال</a>
+      <a class="whatsapp" href="https://wa.me/201153705060">واتساب</a>
+    </div>
+  </article>
 
-    </section>
+  <!-- 6608 -->
+  <article class="property">
+    <span class="code">كود 6608</span>
+    <h2>شقة للبيع – المريوطية / اللبيني</h2>
+    <p>
+      140م² – 3 غرف – الدور الرابع داخل الرخصة – أسانسير.
+      جميع العدادات والمرافق موجودة.
+      مدخل من المريوطية الرئيسي وإطلالة على اللبيني الرئيسي.
+    </p>
+    <p>
+      دقيقتان من الطريق الدائري والطريق السياحي،
+      و5 دقائق من الهرم وفيصل وترسا.
+    </p>
+    <p class="price">السعر: 1,800,000 جنيه قابل للتفاوض</p>
+    <div class="buttons">
+      <a class="call" href="tel:01153705060">اتصال</a>
+      <a class="whatsapp" href="https://wa.me/201153705060">واتساب</a>
+    </div>
+  </article>
 
-    <!-- أرقام التواصل -->
-    <section class="contact">
+  <!-- 4072 -->
+  <article class="property">
+    <span class="code">كود 4072</span>
+    <h2>شقة للبيع – الطالبية / الهرم</h2>
+    <p>
+      شارع أحمد حسين أبو عسل بالتلاتيني القديم.
+      60م² – الدور الأول – 2 غرفة – حمام صغير – مطبخ.
+      منزل وليس برج.
+    </p>
+    <p>عدادات الكهرباء والمياه والغاز متوقفة لحين السكن.</p>
+    <p class="price">السعر: 450,000 جنيه – بيع سريع</p>
+    <div class="buttons">
+      <a class="call" href="tel:01153705060">اتصال</a>
+      <a class="whatsapp" href="https://wa.me/201153705060">واتساب</a>
+    </div>
+  </article>
 
-      <div class="contact-title">
-        أرقام التواصل
-      </div>
+  <!-- 4072 -->
+  <article class="property">
+    <span class="code">كود 4072</span>
+    <h2>شقة للبيع – أم المصريين / الجيزة</h2>
+    <p>
+      75م² – الدور الثاني – 3 غرف – كهرباء ومياه.
+      شقة على ناصية وبلكونة – رؤية غير مجروحة.
+      منزل وليس برج – بيع مباشر من المالك.
+    </p>
+    <p class="price">السعر: 650,000 جنيه قابل لتفاوض بسيط</p>
+    <div class="buttons">
+      <a class="call" href="tel:01153705060">اتصال</a>
+      <a class="whatsapp" href="https://wa.me/201153705060">واتساب</a>
+    </div>
+  </article>
 
-      <div class="phone">
-        01153705060
-      </div>
+  <!-- 9280 -->
+  <article class="property">
+    <span class="code">كود 9280</span>
+    <h2>عمارة للبيع – إمبابة / مطار إمبابة</h2>
+    <p>
+      شارع عبد الحميد دعبس – مساحة 120م².
+      6 أدوار + روف – شقتان بكل دور.
+      عدادات مياه وغاز وكهرباء – تشطيب كامل.
+      شارع بعرض 6 أمتار.
+    </p>
+    <p class="price">السعر: 11,000,000 جنيه قابل للتفاوض</p>
+    <p>فرصة استثمارية قوية ومربحة.</p>
+    <div class="buttons">
+      <a class="call" href="tel:01153705060">اتصال</a>
+      <a class="whatsapp" href="https://wa.me/201153705060">واتساب</a>
+    </div>
+  </article>
 
-    </section>
+  <!-- 2504 -->
+  <article class="property">
+    <span class="code">كود 2504</span>
+    <h2>شقة للبيع – المريوطية فيصل</h2>
+    <p>
+      145م² – 3 غرف – 2 حمام – حمام ماستر.
+      الدور العاشر – أسانسير.
+    </p>
+    <p class="price">السعر: 1,500,000 جنيه</p>
+    <div class="buttons">
+      <a class="call" href="tel:01153705060">اتصال</a>
+      <a class="whatsapp" href="https://wa.me/201153705060">واتساب</a>
+    </div>
+  </article>
 
-  </main>
+  <!-- 4448 -->
+  <article class="property">
+    <span class="code">كود 4448</span>
+    <h2>شقة للبيع – فيصل</h2>
+    <p>مساحة 100م².</p>
+    <p class="price">السعر: 950,000 جنيه قابل للتفاوض</p>
+    <div class="buttons">
+      <a class="call" href="tel:01153705060">اتصال</a>
+      <a class="whatsapp" href="https://wa.me/201153705060">واتساب</a>
+    </div>
+  </article>
+
+  <!-- 7407 -->
+  <article class="property">
+    <span class="code">كود 7407</span>
+    <h2>منزل للبيع – الطوابق / ممدوح جعفر</h2>
+    <p class="price">السعر: 5,000,000 جنيه</p>
+    <div class="buttons">
+      <a class="call" href="tel:01153705060">اتصال</a>
+      <a class="whatsapp" href="https://wa.me/201153705060">واتساب</a>
+    </div>
+  </article>
+
+  <!-- 3545 -->
+  <article class="property">
+    <span class="code">كود 3545</span>
+    <h2>شقة للبيع – أول فيصل</h2>
+    <p>65م² – بالقرب من مترو فيصل.</p>
+    <p class="price">السعر: 560,000 جنيه قابل للتفاوض</p>
+    <div class="buttons">
+      <a class="call" href="tel:01153705060">اتصال</a>
+      <a class="whatsapp" href="https://wa.me/201153705060">واتساب</a>
+    </div>
+  </article>
+
+  <!-- 3063 -->
+  <article class="property">
+    <span class="code">كود 3063</span>
+    <h2>شقة للبيع – فيصل</h2>
+    <p>140م² – نصف تشطيب – الدور الحادي عشر.</p>
+    <p class="price">السعر: 1,400,000 جنيه قابل للتفاوض</p>
+    <div class="buttons">
+      <a class="call" href="tel:01153705060">اتصال</a>
+      <a class="whatsapp" href="https://wa.me/201153705060">واتساب</a>
+    </div>
+  </article>
+
+  <!-- 9062 -->
+  <article class="property">
+    <span class="code">كود 9062</span>
+    <h2>شقة للبيع – المريوطية فيصل</h2>
+    <p>
+      150م² – المرافق باسم المالك.
+    </p>
+    <p class="price">السعر: 2,000,000 جنيه نهائي</p>
+    <div class="buttons">
+      <a class="call" href="tel:01153705060">اتصال</a>
+      <a class="whatsapp" href="https://wa.me/201153705060">واتساب</a>
+    </div>
+  </article>
+
+  <!-- 7767 -->
+  <article class="property">
+    <span class="code">كود 7767</span>
+    <h2>عمارة للبيع – الطوابق فيصل / كعابيش</h2>
+    <p class="price">السعر: 7,500,000 جنيه قابل للتفاوض</p>
+    <div class="buttons">
+      <a class="call" href="tel:01153705060">اتصال</a>
+      <a class="whatsapp" href="https://wa.me/201153705060">واتساب</a>
+    </div>
+  </article>
+
+  <!-- 5932 -->
+  <article class="property">
+    <span class="code">كود 5932</span>
+    <h2>أرض للبيع – منشأة البكاري</h2>
+    <p>
+      مساحة 2500م² – واجهة 26م.
+    </p>
+    <p class="price">السعر: 24,000 جنيه للمتر قابل للتفاوض</p>
+    <div class="buttons">
+      <a class="call" href="tel:01153705060">اتصال</a>
+      <a class="whatsapp" href="https://wa.me/201153705060">واتساب</a>
+    </div>
+  </article>
+
+  <!-- 3960 -->
+  <article class="property">
+    <span class="code">كود 3960</span>
+    <h2>محل للبيع – عمرو بن العاص / مطبعة فيصل</h2>
+    <p>مساحة 110م².</p>
+    <p class="price">السعر: 1,500,000 جنيه</p>
+    <div class="buttons">
+      <a class="call" href="tel:01153705060">اتصال</a>
+      <a class="whatsapp" href="https://wa.me/201153705060">واتساب</a>
+    </div>
+  </article>
+
+  <!-- 1702 -->
+  <article class="property">
+    <span class="code">كود 1702</span>
+    <h2>أرض للبيع – المريوطية / هرم العروبة</h2>
+    <p class="price">السعر: 1,600,000 جنيه</p>
+    <p>السعر مخفض من 2,000,000 جنيه.</p>
+    <div class="buttons">
+      <a class="call" href="tel:01153705060">اتصال</a>
+      <a class="whatsapp" href="https://wa.me/201153705060">واتساب</a>
+    </div>
+  </article>
+
+  <!-- 7994 -->
+  <article class="property">
+    <span class="code">كود 7994</span>
+    <h2>مدرسة للبيع – بالقرب من الدائري / شبرا الخيمة</h2>
+    <p>
+      مساحة الأرض 2000م² – مساحة المباني 700م².
+    </p>
+    <p class="price">السعر: 100,000,000 جنيه قابل للتفاوض</p>
+    <div class="buttons">
+      <a class="call" href="tel:01153705060">اتصال</a>
+      <a class="whatsapp" href="https://wa.me/201153705060">واتساب</a>
+    </div>
+  </article>
+
+  <!-- 9804 -->
+  <article class="property">
+    <span class="code">كود 9804</span>
+    <h2>محل للبيع – الشيشيني / العدوي</h2>
+    <p>مساحة 57م² – مؤجر حاليًا.</p>
+    <p>مناسب للاستثمار.</p>
+    <p class="price">السعر: 1,400,000 جنيه</p>
+    <div class="buttons">
+      <a class="call" href="tel:01153705060">اتصال</a>
+      <a class="whatsapp" href="https://wa.me/201153705060">واتساب</a>
+    </div>
+  </article>
+
+  <!-- 0563 -->
+  <article class="property">
+    <span class="code">كود 0563</span>
+    <h2>شقة للبيع – سهل حمزة</h2>
+    <p>90م².</p>
+    <p class="price">السعر: 950,000 جنيه نهائي</p>
+    <div class="buttons">
+      <a class="call" href="tel:01153705060">اتصال</a>
+      <a class="whatsapp" href="https://wa.me/201153705060">واتساب</a>
+    </div>
+  </article>
+
+  <!-- 4382 -->
+  <article class="property">
+    <span class="code">كود 4382</span>
+    <h2>شقة للبيع – اللبيني الهرم</h2>
+    <p>140م².</p>
+    <p class="price">السعر: 1,850,000 جنيه قابل للتفاوض</p>
+    <div class="buttons">
+      <a class="call" href="tel:01153705060">اتصال</a>
+      <a class="whatsapp" href="https://wa.me/201153705060">واتساب</a>
+    </div>
+  </article>
+
+  <!-- 8497 -->
+  <article class="property">
+    <span class="code">كود 8497</span>
+    <h2>شقة للبيع – عمارات الضباط / خلف ليسيه الهرم</h2>
+    <p>110م².</p>
+    <p class="price">السعر: 2,200,000 جنيه قابل للتفاوض</p>
+    <div class="buttons">
+      <a class="call" href="tel:01153705060">اتصال</a>
+      <a class="whatsapp" href="https://wa.me/201153705060">واتساب</a>
+    </div>
+  </article>
+
+</main>
+
+<footer class="footer">
+
+  <h2>تواصل معنا</h2>
+
+  <div class="phone">01153705060</div>
+
+  <a class="call"
+     href="tel:01153705060">
+    📞 اتصال
+  </a>
+
+  <a class="whatsapp"
+     href="https://wa.me/201153705060?text=مرحباً%20شركة%20الجبلي%20للتسويق%20العقاري%20أريد%20الاستفسار%20عن%20عقار">
+    💬 واتساب الشركة
+  </a>
+
+  <p>
+    شركة الجبلي للتسويق العقاري
+  </p>
+
+  <p>
+    لسنا الوحيدون ولكننا متميزون
+  </p>
+
+</footer>
 
 </body>
 </html>
