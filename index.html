@@ -9,230 +9,163 @@
   <style>
     * {
       box-sizing: border-box;
-      margin: 0;
-      padding: 0;
     }
 
-    body {<img src="logo-1.png" alt="شركة الجبلي للتسويق العقاري">
-      font-family: Arial, sans-serif;
+    body {
+      margin: 0;
+      font-family: Arial, Tahoma, sans-serif;
       background: #111;
       color: #fff;
-      line-height: 1.8;
-    }
-
-    header {
       text-align: center;
-      padding: 30px 15px;
-      background: #000;
-      border-bottom: 2px solid #d4af37;
     }
 
-    .logo-1.png {
-      width: 180px;
+    .hero {
+      min-height: 100vh;
+      padding: 45px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .logo {
+      width: 210px;
       max-width: 80%;
       height: auto;
-      margin-bottom: 15px;
+      display: block;
+      margin: 0 auto 25px;
     }
 
     .company-name {
+      margin: 0;
       font-size: 30px;
-      font-weight: bold;
       color: #d4af37;
-      margin-bottom: 5px;
+      font-weight: bold;
     }
 
-    .slogan {
-      font-size: 18px;
+    .line {
+      width: 100px;
+      height: 2px;
+      background: #d4af37;
+      margin: 18px auto 30px;
+    }
+
+    .properties-title {
+      font-size: 26px;
+      margin: 0 0 25px;
       color: #fff;
     }
 
-    .intro {
-      text-align: center;
-      padding: 30px 15px;
-    }
-
-    .intro h1 {
-      color: #d4af37;
-      margin-bottom: 10px;
-    }
-
     .properties {
-      width: 92%;
-      max-width: 1100px;
-      margin: auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-      padding-bottom: 40px;
+      width: 100%;
+      max-width: 850px;
     }
 
     .property {
       background: #1c1c1c;
       border: 1px solid #d4af37;
-      border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 0 12px rgba(212, 175, 55, 0.15);
+      border-radius: 14px;
+      padding: 22px;
+      margin-bottom: 18px;
     }
 
-    .property h2 {
+    .property h3 {
       color: #d4af37;
-      font-size: 21px;
-      margin-bottom: 12px;
+      margin-top: 0;
     }
 
     .property p {
-      margin-bottom: 7px;
-      color: #eee;
-    }
-
-    .price {
-      color: #d4af37;
-      font-size: 20px;
-      font-weight: bold;
-      margin-top: 12px;
-    }
-
-    .code {
-      color: #aaa;
-      margin-top: 8px;
+      margin-bottom: 0;
+      color: #ddd;
     }
 
     .contact {
-      text-align: center;
-      background: #000;
-      padding: 35px 15px;
-      border-top: 2px solid #d4af37;
+      margin-top: 20px;
+      padding: 22px;
+      width: 100%;
+      max-width: 850px;
+      border-top: 1px solid #d4af37;
     }
 
-    .contact h2 {
+    .contact-title {
       color: #d4af37;
-      margin-bottom: 15px;
+      font-size: 22px;
+      margin-bottom: 12px;
     }
 
     .phone {
-      color: #fff;
-      font-size: 24px;
+      font-size: 25px;
       font-weight: bold;
       direction: ltr;
-      display: inline-block;
+      color: #fff;
     }
 
-    .whatsapp {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 10px 25px;
-      background: #d4af37;
-      color: #000;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-    }
+    @media (max-width: 600px) {
+      .company-name {
+        font-size: 24px;
+      }
 
-    footer {
-      text-align: center;
-      padding: 15px;
-      color: #aaa;
-      font-size: 14px;
+      .properties-title {
+        font-size: 23px;
+      }
+
+      .logo {
+        width: 180px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-  <header>
-    <img src="logo.png" alt="شركة الجبلي للتسويق العقاري" class="logo-img">
+  <main class="hero">
 
-    <div class="company-name">
+    <!-- اللوجو -->
+    <img
+      src="logo-1.png"
+      alt="لوجو شركة الجبلي للتسويق العقاري"
+      class="logo"
+    >
+
+    <!-- اسم الشركة -->
+    <h1 class="company-name">
       شركة الجبلي للتسويق العقاري
-    </div>
+    </h1>
 
-    <div class="slogan">
-      لسنا الوحيدون ولكننا متميزون
-    </div>
-  </header>
+    <div class="line"></div>
 
-  <section class="intro">
-    <h1>العقارات المتاحة</h1>
-    <p>أفضل العقارات للبيع والاستثمار مع شركة الجبلي للتسويق العقاري</p>
-  </section>
+    <!-- العقارات المتاحة -->
+    <h2 class="properties-title">
+      العقارات المتاحة
+    </h2>
 
-  <section class="properties">
+    <section class="properties">
 
-    <div class="property">
-      <h2>شقة للبيع – المريوطية / اللبيني</h2>
-      <p>المساحة: 140 متر</p>
-      <p>3 غرف – الدور الرابع – أسانسير</p>
-      <p>داخل الرخصة</p>
-      <div class="price">1,800,000 جنيه قابل للتفاوض</div>
-      <div class="code">كود: 6608</div>
-    </div>
+      <div class="property">
+        <h3>🏠 عقارات للبيع</h3>
+        <p>شقق • محلات • أراضي • عقارات استثمارية</p>
+      </div>
 
-    <div class="property">
-      <h2>شقة للبيع – شارع الهرم الرئيسي</h2>
-      <p>المساحة: 142 متر</p>
-      <p>3 غرف – 2 حمام – الدور الثاني</p>
-      <p>تشطيب سوبر لوكس</p>
-      <div class="price">4,300,000 جنيه قابل للتفاوض</div>
-      <div class="code">كود: 7345</div>
-    </div>
+      <div class="property">
+        <h3>🏢 عقارات للإيجار</h3>
+        <p>شقق • محلات • وحدات إدارية وتجارية</p>
+      </div>
 
-    <div class="property">
-      <h2>عقار للبيع – مطار إمبابة</h2>
-      <p>المساحة: 120 متر</p>
-      <p>6 أدوار وروف</p>
-      <p>عدادات مياه وغاز وكهرباء</p>
-      <div class="price">11,000,000 جنيه قابل للتفاوض</div>
-      <div class="code">كود: 9280</div>
-    </div>
+    </section>
 
-    <div class="property">
-      <h2>شقة للبيع – الطالبية / الهرم</h2>
-      <p>المساحة: 60 متر</p>
-      <p>غرفتين – أول بلكونة</p>
-      <p>فرصة للبيع السريع</p>
-      <div class="price">450,000 جنيه</div>
-      <div class="code">كود: 4072</div>
-    </div>
+    <!-- أرقام التواصل -->
+    <section class="contact">
 
-    <div class="property">
-      <h2>شقة للبيع – أم المصريين / الجيزة</h2>
-      <p>المساحة: 75 متر</p>
-      <p>3 غرف – الدور الثاني</p>
-      <p>كهرباء ومياه – غير مجروحة</p>
-      <div class="price">650,000 جنيه قابل للتفاوض البسيط</div>
-      <div class="code">كود: 4072</div>
-    </div>
+      <div class="contact-title">
+        أرقام التواصل
+      </div>
 
-    <div class="property">
-      <h2>أرض للبيع – منشأة البكاري</h2>
-      <p>المساحة: 2500 متر</p>
-      <p>واجهة: 26 متر</p>
-      <div class="price">24,000 جنيه للمتر قابل للتفاوض</div>
-      <div class="code">كود: 5932</div>
-    </div>
+      <div class="phone">
+        01153705060
+      </div>
 
-  </section>
+    </section>
 
-  <section class="contact">
-    <h2>تواصل معنا</h2>
-
-    <div class="phone">
-      01153705060
-    </div>
-
-    <br>
-
-    <a
-      class="whatsapp"
-      href="https://wa.me/201153705060"
-      target="_blank">
-      تواصل معنا على واتساب
-    </a>
-  </section>
-
-  <footer>
-    © 2026 شركة الجبلي للتسويق العقاري
-  </footer>
+  </main>
 
 </body>
 </html>
